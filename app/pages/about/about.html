@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Nosotros</ion-title>
+    <ion-buttons end>
+      <button (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="about-header">
+    <img src="img/ionic-logo-white.svg">
+  </div>
+  <div padding class="about-info">
+    <h4>METROPOLITANO</h4>
+
+    <ion-list no-lines>
+
+      <ion-item>
+        <ion-icon name="pin" item-left></ion-icon>
+        <ion-label>Central</ion-label>
+        <ion-select>
+          <ion-option value="madison" selected>Lima, Lima</ion-option>
+          <ion-option value="austin">Austin, TX</ion-option>
+          <ion-option value="chicago">Chicago, IL</ion-option>
+          <ion-option value="seattle">Seattle, WA</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <p>
+      El Metropolitano es el primer transporte público, urbano y masivo de Lima que atiende alrededor de 700 mil viajes diarios.
+
+      El sistema esta compuesto por Buses de Transporte Rápido - BRT  de alta capacidad, corredores exclusivos y estaciones;
+      también armoniza rutas, tipo de servicio, frecuencia de viajes y programación horaria.
+    </p>
+  </div>
+</ion-content>
